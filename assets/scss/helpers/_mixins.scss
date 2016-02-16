@@ -1,0 +1,80 @@
+/*
+ | -----------------------------------------------------------------------------
+ | Breakpoints
+ | -----------------------------------------------------------------------------
+*/
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == "mobile" {
+    @media (max-width: 640px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "desktop" {
+    @media (min-width: 641px) {
+      @content;
+    }
+  }
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Useful mixins
+ | -----------------------------------------------------------------------------
+*/
+@mixin border-radius($value: 3px) {
+  -webkit-border-radius: $value;
+  -moz-border-radius   : $value;
+  -ms-border-radius    : $value;
+  -o-border-radius     : $value;
+  border-radius        : $value;
+}
+
+@mixin transition($transition : all 150ms ease-in-out) {
+  -webkit-transition: $transition;
+  -moz-transition   : $transition;
+  -ms-transition    : $transition;
+  -o-transition     : $transition;
+  transition        : $transition;
+}
+
+@mixin translateX($value) {
+  -webkit-transform: translateX($value);
+  -moz-transform:    translateX($value);
+  -ms-transform:     translateX($value);
+  -o-transform:      translateX($value);
+  transform:         translateX($value);
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Columns for posts
+ | -----------------------------------------------------------------------------
+*/
+@mixin post2Col() {
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(2n + 1) {
+    clear: left;
+  }
+}
+
+@mixin post3Col() {
+  width: 31.33333%;
+  float: left;
+  margin-right: 3%;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(3n + 1) {
+    clear: left;
+  }
+}

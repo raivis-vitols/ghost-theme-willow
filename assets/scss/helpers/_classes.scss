@@ -1,0 +1,89 @@
+/*
+ | -----------------------------------------------------------------------------
+ | Helper classes
+ | -----------------------------------------------------------------------------
+*/
+.clear:after  {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Markdown content style
+ | -----------------------------------------------------------------------------
+*/
+.markdown {
+  line-height: 2em;
+
+  h1, h2, h3, p, ul,
+  blockquote, pre, .gist {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  ul {
+    padding-left: 3em;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    @include transition();
+  }
+
+  blockquote {
+    padding-left: 30px;
+    font-style: italic;
+    border-left: 4px solid $c-grayNormal;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    margin: 30px 0;
+    background: $c-grayNormal;
+  }
+
+  pre {
+    padding: 1em;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    background: $c-grayNormal;
+  }
+
+  code {
+    background: $c-grayNormal;
+  }
+
+  .gist .gist-file {
+    margin-bottom: 0;
+  }
+}

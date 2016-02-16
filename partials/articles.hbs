@@ -1,0 +1,27 @@
+{{#foreach posts}}
+    <article class="post-listed {{post_class}}">
+        <a class="post-image" href="{{url}}" title="{{title}}">
+            <img src="{{image}}" alt="{{title}}"/>
+        </a>
+
+        <h2>
+            <a href="{{url}}" title="{{title}}">{{title}}</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="time">
+                {{date format="DD MMMM, YYYY"}}
+            </span>
+
+            {{#if tags}}
+                in
+                <span class="tags">
+                    {{#foreach tags}}
+                        <a href="{{url}}" title="{{name}}">#{{name}}</a>
+                    {{/foreach}}
+                </span>
+            {{/if}}
+        </div>
+    </article>
+{{/foreach}}
+{{pagination}}

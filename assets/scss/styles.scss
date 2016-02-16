@@ -1,0 +1,390 @@
+/*
+ | -----------------------------------------------------------------------------
+ | Variables
+ | -----------------------------------------------------------------------------
+*/
+$sidebarWidth : 290px;
+$maxPageWidth : 1000px;
+
+$c-white      : #ffffff;
+$c-baseNormal : #555555;
+$c-grayNormal : #f7f7f7;
+
+$c-grayDark   : darken($c-grayNormal, 5);
+$c-baseLight  : lighten($c-baseNormal, 20);
+
+/*
+ | -----------------------------------------------------------------------------
+ | Imports
+ | -----------------------------------------------------------------------------
+*/
+@import "vendor/normalize";
+@import "helpers/mixins";
+@import "helpers/classes";
+
+/*
+ | -----------------------------------------------------------------------------
+ | Resets and html + body styles
+ | -----------------------------------------------------------------------------
+*/
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul, blockquote, pre {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body {
+  min-width: 320px;
+  background: $c-grayNormal;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: $c-baseNormal;
+  font-family: 'Merriweather', serif;
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Anchors
+ | -----------------------------------------------------------------------------
+*/
+a {
+  outline: none;
+  color: $c-baseNormal;
+  text-decoration: none;
+  @include transition();
+
+  &:hover {
+    color: $c-baseLight;
+  }
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Layout
+ | -----------------------------------------------------------------------------
+*/
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.viewport {
+  width: 100%;
+  @include translateX(0);
+
+  @include breakpoint(mobile) {
+    @include transition(300ms);
+  }
+}
+
+@include breakpoint(mobile) {
+  .wrapper[data-menu-visible="1"] .viewport {
+    @include translateX($sidebarWidth);
+  }
+}
+
+.sidebar {
+  width: $sidebarWidth;
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+  top : 0;
+
+  @include breakpoint(desktop) {
+    left: 0;
+  }
+
+  @include breakpoint(mobile) {
+    left: -$sidebarWidth;
+  }
+}
+
+.content {
+  min-height: 100vh;
+  max-width: $maxPageWidth;
+
+  @include breakpoint(desktop) {
+    margin-left: $sidebarWidth;
+  }
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Sidebar
+ | -----------------------------------------------------------------------------
+*/
+.sidebar {
+  text-align: center;
+
+  .sidebar-header {
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-bottom: 70px;
+    position: relative;
+    height: 100px;
+
+    a, img {
+      width: 80px;
+      height: 80px;
+    }
+
+    a {
+      left: 50%;
+      bottom: -40px;
+      position: absolute;
+      margin-left: -40px;
+    }
+
+    img {
+      display: block;
+      border: 2px solid $c-white;
+      @include border-radius(40px);
+    }
+  }
+
+  h1, h2, .sidebar-menu, .sidebar-links {
+    margin: 0 auto 20px;
+    max-width: 265px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 0.8em;
+    color: $c-baseLight;
+    font-weight: normal;
+  }
+
+  .sidebar-links {
+    font-size: 0.8em;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $c-grayDark;
+
+    a {
+      padding: 0 5px;
+    }
+  }
+
+  .sidebar-menu {
+    a {
+      display: block;
+      padding: 5px 0;
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+  }
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Mobile header
+ | -----------------------------------------------------------------------------
+*/
+.mobile-header {
+  margin-bottom: 20px;
+
+  .mobile-menu,
+  .mobile-logo {
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .mobile-menu {
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  .mobile-logo {
+    width: 40px;
+    float: right;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | 404 page
+ | -----------------------------------------------------------------------------
+*/
+.error-page {
+  text-align: center;
+  color: $c-baseLight;
+  line-height: 2em;
+}
+
+/*
+ | -----------------------------------------------------------------------------
+ | Content
+ | -----------------------------------------------------------------------------
+*/
+.content {
+  background: $c-white;
+  border-left: 1px solid $c-grayDark;
+
+  @include breakpoint(mobile) {
+    padding: 20px;
+  }
+
+  @include breakpoint(desktop) {
+    padding: 30px;
+    border-right: 1px solid $c-grayDark;
+  }
+
+  /*
+   | ---------------------------------------------------------------------------
+   | Posts list
+   | ---------------------------------------------------------------------------
+  */
+  .post-listed {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $c-grayDark;
+
+    h2 {
+      font-size: 1.1em;
+      line-height: 1.4em;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 1200px) {
+      @include post3Col();
+    }
+
+    @media (max-width: 640px) and (min-width: 600px) {
+      @include post2Col();
+    }
+
+    @media (max-width: 1199px) and (min-width: 880px) {
+      @include post2Col();
+    }
+  }
+
+  /*
+   | ---------------------------------------------------------------------------
+   | Single post
+   | ---------------------------------------------------------------------------
+  */
+  .post-single {
+    .post-header, .post-footer {
+      margin: 50px 0 40px;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid $c-grayNormal;
+      border-bottom: 1px solid $c-grayNormal;
+
+      h1 {
+        font-size: 1.4em;
+        line-height: normal;
+        margin-bottom: 20px;
+      }
+    }
+
+    .post-header {
+      margin-top: 0;
+    }
+  }
+
+  /*
+   | ---------------------------------------------------------------------------
+   | Main post image
+   | ---------------------------------------------------------------------------
+  */
+  .post-image {
+    display: block;
+    margin-bottom: 15px;
+
+    &:not(div):hover {
+      opacity: 0.8;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /*
+   | ---------------------------------------------------------------------------
+   | Post content - markdown
+   | ---------------------------------------------------------------------------
+  */
+  .post-content {
+    @extend .markdown;
+  }
+
+  /*
+   | ---------------------------------------------------------------------------
+   | Post meta block - tags, share links, etc.
+   | ---------------------------------------------------------------------------
+  */
+  .post-meta {
+    font-size: 0.8em;
+    font-style: italic;
+    color: $c-baseLight;
+
+    .tags {
+      a {
+        text-transform: lowercase;
+      }
+    }
+
+    .share {
+      a {
+        font-weight: bold;
+        padding: 0 5px 0 0;
+      }
+
+      .share-twitter {
+        color: #4099FF;
+      }
+
+      .share-facebook {
+        color: #3B5998;
+      }
+
+      .share-google-plus {
+        color: #d34836;
+      }
+
+      .share-twitter,
+      .share-facebook,
+      .share-google-plus {
+        &:hover {
+          color: $c-baseLight;
+        }
+      }
+    }
+  }
+
+  /*
+   | ---------------------------------------------------------------------------
+   | Posts pagination
+   | ---------------------------------------------------------------------------
+  */
+  .pagination {
+    clear: both;
+    @extend .clear;
+
+    .older-posts {
+      float: right;
+    }
+  }
+}

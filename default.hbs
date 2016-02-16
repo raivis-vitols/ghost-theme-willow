@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{> "head"}}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div id="wrapper" class="wrapper">
+        <div id="viewport" class="viewport">
+            <div id="sidebar" class="sidebar">
+                <div class="sidebar-header" style="background-image: url({{@blog.cover}})">
+                    <a href="{{@blog.url}}" title="John Doe">
+                        <img src="{{asset "img/avatar.jpg"}}" alt="John Doe">
+                    </a>
+                </div>
+
+                <h1>
+                    <a href="{{@blog.url}}" title="John Doe">
+                        John Doe
+                    </a>
+                </h1>
+
+                <h2>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam.
+                </h2>
+
+                {{> "social-links"}}
+                {{navigation}}
+            </div>
+
+            <div class="content" id="content">
+                {{> "mobile-header"}}
+
+                <div class="main-section">
+                    {{{body}}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{asset "js/script.js"}}"></script>
+    {{ghost_foot}}
+</body>
+</html>

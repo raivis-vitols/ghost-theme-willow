@@ -1,0 +1,22 @@
+{{!< default}}
+{{#post}}
+    <div class="post-single {{post_class}}">
+        <div class="post-header">
+            <h1>{{title}}</h1>
+            {{> "post-single-meta"}}
+        </div>
+
+        <div class="post-content">
+            {{content}}
+        </div>
+
+        <div class="post-footer">
+            {{> "post-single-meta"}}
+        </div>
+    </div>
+
+    <div id="disqus_thread"></div>
+    <script async="async">
+        /* Paste Your Disqus Embed Code Here */
+    </script>
+{{/post}}
