@@ -211,6 +211,7 @@ a {
 
     img {
       max-width: 100%;
+      @include border-radius(20px);
     }
   }
 

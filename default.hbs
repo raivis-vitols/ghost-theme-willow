@@ -9,20 +9,19 @@
         <div id="viewport" class="viewport">
             <div id="sidebar" class="sidebar">
                 <div class="sidebar-header" style="background-image: url({{@blog.cover}})">
-                    <a href="{{@blog.url}}" title="John Doe">
-                        <img src="{{asset "img/avatar.jpg"}}" alt="John Doe">
+                    <a href="{{@blog.url}}" title="{{@blog.title}}">
+                        <img src="{{@blog.logo}}" alt="{{@blog.title}}">
                     </a>
                 </div>
 
                 <h1>
-                    <a href="{{@blog.url}}" title="John Doe">
-                        John Doe
+                    <a href="{{@blog.url}}" title="{{@blog.title}}">
+                        {{@blog.title}}
                     </a>
                 </h1>
 
                 <h2>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam.
+                    {{@blog.description}}
                 </h2>
 
                 {{> "social-links"}}
