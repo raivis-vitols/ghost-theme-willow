@@ -26,9 +26,3 @@ line and replace it with your Disqus embed code.
 ### Social Links
 
 Edit the `content/themes/[theme-folder]/partials/social-links.hbs` file.
-
-### Personal Branding
-
-Update `content/themes/[theme-folder]/default.hbs` and 
-`content/themes/[theme-folder]/partials/mobile-header.hbs`
-files to remove "John Doe" and "Lorem ipsum..." references.
