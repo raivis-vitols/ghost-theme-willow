@@ -5,14 +5,15 @@ Personal, responsive, minimalist and open-source theme for Ghost blogging platfo
 
 ## Demo
 
-This theme is currenly used on my [personal blog](https://raivis.com/).
+This theme is currently used on my [personal blog](https://raivis.com/).
 
 ## Styling & Compiling
 
-Requires [Compass](http://compass-style.org/) framework to be installed.
+Requires Grunt task runner & NPM to be installed.
 
-    $ cd content/themes/[theme-folder]/assets/scss
-    $ compass watch ./
+    $ cd content/themes/[theme-folder]
+    $ npm install
+    $ grunt
     
 ## Adding Disqus
 
