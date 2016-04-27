@@ -1,9 +1,13 @@
-<div class="pagination">
+<div class="c-post-pagination">
     {{#if prev}}
-        <a class="newer-posts" href="{{page_url prev}}">&larr; Newer</a>
+        <a class="c-post-pagination__item" href="{{page_url prev}}">
+            &larr; Previous Page
+        </a>
     {{/if}}
 
     {{#if next}}
-        <a class="older-posts" href="{{page_url next}}">Older &rarr;</a>
+        <a class="c-post-pagination__item c-post-pagination__item--older" href="{{page_url next}}">
+            Next Page &rarr;
+        </a>
     {{/if}}
 </div>

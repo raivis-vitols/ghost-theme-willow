@@ -1,33 +1,23 @@
-# Willow Ghost Theme
+# Willow Ghost Theme 2.0
+
 Personal, responsive, minimalist and open-source theme for Ghost blogging platform.
+Lightweight - only 2.8KB of CSS and 828B of JavaScript. No jQuery, vanilla JS only.
+Version 2.0 comes with SASS in BEM style using ITCSS (http://itcss.io/) architecture.
 
-![Willow Ghost Theme](http://i.imgur.com/gGNeWzG.png)
+![Willow Ghost Theme](http://i.imgur.com/17SqjHR.png)
 
-## Demo
+## Theme Demo
 
-This theme is currently used on my [personal blog](https://raivis.com/).
+This theme is currently being used on my personal blog - [https://raivis.com/](https://raivis.com/).
 
-## Styling & Compiling
+## Compiling SASS & Minifying JavaScript
 
 Requires Grunt task runner & NPM to be installed.
 
     $ cd content/themes/[theme-folder]
     $ npm install
     $ grunt
-    
-## Adding Disqus
 
-Open the `content/themes/[theme-folder]/post.hbs` file, 
-lookup `/* Paste Your Disqus Embed Code Here */` 
-line and replace it with your Disqus embed code, which usually looks like this:
+## Editing Social Links and Promo Links
 
-    (function() {
-        var d = document, s = d.createElement('script');
-        s.src = '//yourdisqussite.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-    
-## Editing Social Links
-
-Edit the `content/themes/[theme-folder]/partials/social-links.hbs` file.
+Edit the `content/themes/[theme-folder]/partials/sidebar.hbs` file.

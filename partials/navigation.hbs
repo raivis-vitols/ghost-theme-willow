@@ -1,5 +1,7 @@
-<div class="sidebar-menu">
+<div class="c-sidebar-navigation">
     {{#foreach navigation}}
-        <a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a>
+        <a class="c-sidebar-navigation__item" href="{{url absolute="true"}}" title="{{label}}">
+            {{label}}
+        </a>
     {{/foreach}}
 </div>

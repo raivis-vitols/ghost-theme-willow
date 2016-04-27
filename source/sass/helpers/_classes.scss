@@ -1,7 +1,7 @@
 /*
- | -----------------------------------------------------------------------------
- | Helper classes
- | -----------------------------------------------------------------------------
+|-------------------------------------------------------------------------------
+| Helpers / Overrides
+|-------------------------------------------------------------------------------
 */
 .clear:after  {
   content: "";
@@ -20,22 +20,11 @@
   h1, h2, h3, p, ul,
   blockquote, pre, .gist {
     margin-bottom: 30px;
+    word-wrap: break-word;
 
     &:last-child {
       margin-bottom: 0;
     }
-  }
-
-  h1 {
-    font-size: 1.4em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  h3 {
-    font-size: 1em;
   }
 
   ul {
@@ -57,30 +46,36 @@
   img {
     width: 100%;
     @include transition();
+
+    &.inline {
+      width: auto;
+      display: inline-block;
+    }
   }
 
   blockquote {
     padding-left: 30px;
     font-style: italic;
-    border-left: 4px solid $c-grayNormal;
+    border-left: 4px solid $c-grayMedium;
   }
 
   hr {
     border: 0;
     height: 1px;
     margin: 30px 0;
-    background: $c-grayNormal;
+    background: $c-grayMedium;
   }
 
   pre {
     padding: 1em;
+    overflow: auto;
     font-size: 0.9em;
     line-height: 1.5em;
-    background: $c-grayNormal;
+    background: $c-grayLight;
   }
 
   code {
-    background: $c-grayNormal;
+    background: $c-grayLight;
   }
 
   .gist .gist-file {

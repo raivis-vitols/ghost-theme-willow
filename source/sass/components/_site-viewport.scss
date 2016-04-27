@@ -1,0 +1,20 @@
+/*
+|-------------------------------------------------------------------------------
+| Site viewport
+|-------------------------------------------------------------------------------
+*/
+.c-site-viewport {
+  width: 100%;
+  @include translateX(0);
+
+  @include breakpoint(mobile) {
+    @include transition(300ms);
+  }
+}
+
+// Sidebar visible state
+@include breakpoint(mobile) {
+  [data-menu-visible="1"] .c-site-viewport {
+    @include translateX($sidebarWidth);
+  }
+}

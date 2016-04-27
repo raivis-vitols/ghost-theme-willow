@@ -1,44 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    {{> "head"}}
+    {{>"head"}}
     {{ghost_head}}
 </head>
+
 <body class="{{body_class}}">
-    <div id="wrapper" class="wrapper">
-        <div id="viewport" class="viewport">
-            <div id="sidebar" class="sidebar">
-                <div class="sidebar-header" style="background-image: url({{@blog.cover}})">
-                    <a href="{{@blog.url}}" title="{{@blog.title}}">
-                        <img src="{{@blog.logo}}" alt="{{@blog.title}}">
-                    </a>
-                </div>
+    <div id="site-wrapper" class="c-site-wrapper">
+        <div id="site-viewport" class="c-site-viewport">
+            {{>"sidebar"}}
 
-                <h1>
-                    <a href="{{@blog.url}}" title="{{@blog.title}}">
-                        {{@blog.title}}
-                    </a>
-                </h1>
-
-                <h2>
-                    {{@blog.description}}
-                </h2>
-
-                {{> "social-links"}}
-                {{navigation}}
-            </div>
-
-            <div class="content" id="content">
+            <div id="site-content" class="c-site-content">
                 {{> "mobile-header"}}
-
-                <div class="main-section">
-                    {{{body}}}
-                </div>
+                {{{body}}}
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="{{asset "js/script.js"}}"></script>
+    <script src="{{asset "js/scripts.js"}}"></script>
     {{ghost_foot}}
 </body>
 </html>

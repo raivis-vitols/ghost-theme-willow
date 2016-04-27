@@ -1,0 +1,23 @@
+/*
+|-------------------------------------------------------------------------------
+| Site sidebar
+|-------------------------------------------------------------------------------
+*/
+.c-site-sidebar {
+  width: $sidebarWidth;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+
+  // Visible by default on desktop
+  @include breakpoint(desktop) {
+    left: 0;
+  }
+
+  // Off canvas by default on mobile
+  @include breakpoint(mobile) {
+    left: -$sidebarWidth;
+  }
+}

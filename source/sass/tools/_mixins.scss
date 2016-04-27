@@ -1,8 +1,9 @@
 /*
- | -----------------------------------------------------------------------------
- | Breakpoints
- | -----------------------------------------------------------------------------
+|-------------------------------------------------------------------------------
+| Mixins
+|-------------------------------------------------------------------------------
 */
+// Shortcuts to breakpoints
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == "mobile" {
     @media (max-width: 640px) {
@@ -17,11 +18,7 @@
   }
 }
 
-/*
- | -----------------------------------------------------------------------------
- | Useful mixins
- | -----------------------------------------------------------------------------
-*/
+// Border radius
 @mixin border-radius($value: 3px) {
   -webkit-border-radius: $value;
   -moz-border-radius   : $value;
@@ -30,6 +27,16 @@
   border-radius        : $value;
 }
 
+// Background size
+@mixin bg-size($value: cover) {
+  -webkit-background-size: $value;
+  -moz-background-size   : $value;
+  -ms-background-size    : $value;
+  -o-background-size     : $value;
+  background-size        : $value;
+}
+
+// Transition
 @mixin transition($transition : all 150ms ease-in-out) {
   -webkit-transition: $transition;
   -moz-transition   : $transition;
@@ -38,6 +45,7 @@
   transition        : $transition;
 }
 
+// TranslateX
 @mixin translateX($value) {
   -webkit-transform: translateX($value);
   -moz-transform:    translateX($value);
@@ -46,11 +54,7 @@
   transform:         translateX($value);
 }
 
-/*
- | -----------------------------------------------------------------------------
- | Columns for posts
- | -----------------------------------------------------------------------------
-*/
+// 2 column layout
 @mixin post2Col() {
   width: 48%;
   float: left;
@@ -65,6 +69,7 @@
   }
 }
 
+// 3 column layout
 @mixin post3Col() {
   width: 31.33333%;
   float: left;
