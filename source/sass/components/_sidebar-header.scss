@@ -1,0 +1,36 @@
+/*
+|-------------------------------------------------------------------------------
+| Sidebar header
+|-------------------------------------------------------------------------------
+*/
+// Cover
+.c-sidebar-header {
+  height: 100px;
+  position: relative;
+  margin-bottom: 70px;
+  @include bg-size(cover);
+  background-position: 50% 50%;
+}
+
+// Logo and link
+.c-sidebar-header__link,
+.c-sidebar-header__image {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+// Logo
+.c-sidebar-header__image {
+  @include border-radius(40px);
+  border: 2px solid $c-white;
+}
+
+// Link {
+.c-sidebar-header__link {
+  left: 50%;
+  bottom: -40px;
+  z-index: 1;
+  position: absolute;
+  margin-left: -40px;
+}

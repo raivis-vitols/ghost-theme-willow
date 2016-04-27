@@ -11,9 +11,13 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         var menu = document.getElementById('mobile-menu'),
-            wrapper = document.getElementById('wrapper'),
-            content = document.getElementById('content'),
+            wrapper = document.getElementById('site-wrapper'),
+            content = document.getElementById('site-content'),
             menuVisibilityData = 'data-menu-visible';
+
+        if (!menu || !wrapper || !content) {
+            return;
+        }
 
         /*
          | ---------------------------------------------------------------------

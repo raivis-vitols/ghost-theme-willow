@@ -1,0 +1,15 @@
+/*
+|-------------------------------------------------------------------------------
+| Post view meta - date & tags
+|-------------------------------------------------------------------------------
+*/
+.c-post-view-meta {
+  font-size: 0.8em;
+  line-height: 2em;
+  font-style: italic;
+  color: $c-grayAccent;
+}
+
+.c-post-view-meta__tags {
+  text-transform: lowercase;
+}

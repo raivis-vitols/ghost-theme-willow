@@ -1,0 +1,57 @@
+/*
+|-------------------------------------------------------------------------------
+| Post list
+|-------------------------------------------------------------------------------
+*/
+// Wrapper
+.c-post-list {
+  @extend .clear;
+}
+
+// Article item
+.c-post-list__item {
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $c-grayMedium;
+
+  @media (min-width: 1200px) {
+    @include post3Col();
+  }
+
+  @media (max-width: 1199px) and (min-width: 880px) {
+    @include post2Col();
+  }
+}
+
+// Image and image link
+.c-post-list__image {
+  display: block;
+  margin-bottom: 15px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.c-post-list__image__img {
+  width: 100%;
+  display: block;
+}
+
+// Title
+.c-post-list__title {
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
+
+// Meta info
+.c-post-list__meta {
+  font-size: 0.8em;
+  font-style: italic;
+  color: $c-grayAccent;
+}
+
+.c-post-list__meta__tags {
+  text-transform: lowercase;
+}

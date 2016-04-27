@@ -1,0 +1,24 @@
+/*
+|-------------------------------------------------------------------------------
+| Site content
+|-------------------------------------------------------------------------------
+*/
+.c-site-content {
+  min-height: 100vh;
+  max-width: $maxPageWidth;
+
+  background: $c-white;
+  border-left: 1px solid $c-grayMedium;
+  border-right: 1px solid $c-grayMedium;
+
+  // Less padding for mobile devices
+  @include breakpoint(mobile) {
+    padding: 20px;
+  }
+
+  // More padding + margin on desktop
+  @include breakpoint(desktop) {
+    padding: 30px;
+    margin-left: $sidebarWidth;
+  }
+}

@@ -1,0 +1,17 @@
+/*
+|-------------------------------------------------------------------------------
+| Sidebar navigation
+|-------------------------------------------------------------------------------
+*/
+.c-sidebar-navigation {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $c-grayMedium;
+}
+
+.c-sidebar-navigation__item {
+  padding: 5px;
+  font-weight: bold;
+  display: inline-block;
+}

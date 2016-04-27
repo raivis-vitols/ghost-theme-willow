@@ -1,0 +1,40 @@
+/*
+|-------------------------------------------------------------------------------
+| Post view
+|-------------------------------------------------------------------------------
+*/
+.c-post-view--narrow {
+  text-align: center;
+  max-width: 610px;
+  margin: 0 auto;
+}
+
+// Header
+.c-post-view__header {
+  text-align: center;
+  padding: 10px 0 40px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid $c-grayMedium;
+}
+
+.c-post-view__header__title {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+.c-post-view__header__title--no-meta {
+  margin-bottom: 0;
+}
+
+  // Content
+.c-post-view__content {
+  @extend .markdown;
+}
+
+// Footer
+.c-post-view__footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px 0 10px;
+  border-top: 1px solid $c-grayMedium;
+}

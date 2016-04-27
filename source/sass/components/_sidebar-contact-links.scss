@@ -1,0 +1,15 @@
+/*
+|-------------------------------------------------------------------------------
+| Sidebar contact links - github, linkedin, twitter, etc.
+|-------------------------------------------------------------------------------
+*/
+.c-sidebar-contact-links {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $c-grayMedium;
+}
+
+.c-sidebar-contact-links__item {
+  padding: 0 5px;
+}

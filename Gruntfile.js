@@ -5,8 +5,7 @@ module.exports = function (grunt) {
         sass: {
             dist: {
                 files: {
-                    'assets/css/styles.css': 'assets/src/sass/styles.scss',
-                    'assets/css/print.css': 'assets/src/sass/print.scss'
+                    'assets/css/styles.css': 'source/sass/styles.scss'
                 },
 
                 options: {
@@ -17,24 +16,24 @@ module.exports = function (grunt) {
         },
 
         uglify: {
-            script: {
+            scripts: {
                 files: {
-                    'assets/js/script.js': [
-                        'assets/src/js/vendor/*.js',
-                        'assets/src/js/*.js'
+                    'assets/js/scripts.js': [
+                        'source/js/vendor/*.js',
+                        'source/js/*.js'
                     ]
                 }
             }
         },
 
         watch: {
-            css: {
-                files: 'assets/src/sass/**/*.scss',
+            sass: {
+                files: 'source/sass/**/*.scss',
                 tasks: ['sass']
             },
 
-            js: {
-                files: 'assets/src/js/**/*.js',
+            scripts: {
+                files: 'source/js/**/*.js',
                 tasks: ['uglify']
             }
         }

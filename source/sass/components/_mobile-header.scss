@@ -1,0 +1,37 @@
+/*
+|-------------------------------------------------------------------------------
+| Mobile header
+|-------------------------------------------------------------------------------
+*/
+.c-mobile-header {
+  @extend .clear;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $c-grayMedium;
+
+  // Not visible for desktop
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}
+
+.c-mobile-header__link,
+.c-mobile-header__logo,
+.c-mobile-header__logo__image {
+  height: 40px;
+  line-height: 40px;
+}
+
+.c-mobile-header__link {
+  font-weight: bold;
+}
+
+.c-mobile-header__logo {
+  float: right;
+}
+
+.c-mobile-header__logo__image {
+  width: 40px;
+  height: 40px;
+  @include border-radius(20px);
+}
