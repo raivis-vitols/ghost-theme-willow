@@ -4,7 +4,7 @@ Personal, responsive, minimalist and open-source theme for Ghost blogging platfo
 Lightweight - only 2.8KB of CSS and 828B of JavaScript. No jQuery, vanilla JS only.
 Version 2.0 comes with SASS in BEM style using ITCSS (http://itcss.io/) architecture.
 
-![Willow Ghost Theme](http://i.imgur.com/17SqjHR.png)
+![Willow Ghost Theme](http://i.imgur.com/a8WfkoS.png)
 
 ## Theme Demo
 
