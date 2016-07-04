@@ -1,0 +1,41 @@
+{{!< default}}
+{{#author}}
+    <div class="c-author-page">
+        {{#if image}}
+            <div class="c-author-page__image">
+                <img class="c-author-page__image__src" src="{{image}}" alt="{{name}}'s Picture"/>
+            </div>
+        {{/if}}
+
+        <h1 class="c-author-page__title">
+            {{name}}
+        </h1>
+
+        {{#if bio}}
+            <h3 class="c-author-page__bio">
+                {{bio}}
+            </h3>
+        {{/if}}
+
+        <div class="c-author-page__meta">
+            {{#if location}}
+                <span class="c-author-page__meta__location">{{location}}</span>
+            {{/if}}
+
+            {{#if location}}
+                {{#if website}}
+                    -
+                {{/if}}
+            {{/if}}
+
+            {{#if website}}
+                <span class="c-author-page__meta__website">
+                    <a href="{{website}}" target="_blank">{{website}}</a>
+                </span>
+            {{/if}}
+        </div>
+    </div>
+{{/author}}
+
+{{> "post-list"}}
+{{pagination}}

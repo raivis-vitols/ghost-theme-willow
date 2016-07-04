@@ -8,8 +8,8 @@
   max-width: $maxPageWidth;
 
   background: $c-white;
-  border-left: 1px solid $c-grayMedium;
-  border-right: 1px solid $c-grayMedium;
+  border-left: 1px solid $c-gray;
+  border-right: 1px solid $c-gray;
 
   // Less padding for mobile devices
   @include breakpoint(mobile) {

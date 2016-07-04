@@ -15,23 +15,23 @@ body, html {
 
 // Body
 body {
-  min-width: 320px;
-  background: $c-grayLight;
-  color: $c-grayDark;
+  color: $c-black;
   font-size: 16px;
-  line-height: 1.2em;
+  min-width: 320px;
+  line-height: 1.5;
+  background: $c-background;
   font-family: 'Merriweather', serif;
 }
 
 // Anchors
 a {
   outline: none;
-  color: $c-grayDark;
+  color: $c-black;
   @include transition();
   text-decoration: none;
 
   &:hover {
-    color: $c-grayAccent;
+    color: $c-grayDark;
   }
 }
 

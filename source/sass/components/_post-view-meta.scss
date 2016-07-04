@@ -4,12 +4,16 @@
 |-------------------------------------------------------------------------------
 */
 .c-post-view-meta {
+  line-height: 2;
   font-size: 0.8em;
-  line-height: 2em;
   font-style: italic;
-  color: $c-grayAccent;
+  color: $c-grayDark;
 }
 
 .c-post-view-meta__tags {
   text-transform: lowercase;
+}
+
+.c-page-title__heading + .c-post-view-meta {
+  margin-top: 20px;
 }

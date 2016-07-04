@@ -1,0 +1,40 @@
+/*
+|-------------------------------------------------------------------------------
+| Author page
+|-------------------------------------------------------------------------------
+*/
+.c-author-page {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 10px 0 40px;
+  border-bottom: 1px solid $c-gray;
+}
+
+// Image
+.c-author-page__image {
+  margin-bottom: 20px;
+}
+
+.c-author-page__image__src {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  @include border-radius(50px);
+}
+
+// Bio
+.c-author-page__bio {
+  max-width: 600px;
+  font-size: 0.9em;
+  color: $c-grayDark;
+  font-weight: normal;
+  margin: 20px auto 0;
+}
+
+// Meta
+.c-author-page__meta {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: $c-grayDark;
+}

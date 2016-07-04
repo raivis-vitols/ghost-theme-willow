@@ -1,10 +1,15 @@
 /*
 |-------------------------------------------------------------------------------
-| Error message - 404 page
+| Page title
 |-------------------------------------------------------------------------------
 */
-.c-error-message {
-  line-height: 2;
+.c-page-title {
   text-align: center;
-  color: $c-grayDark;
+  margin-bottom: 40px;
+  padding: 10px 0 40px 0;
+  border-bottom: 1px solid $c-gray;
+}
+
+.c-page-title__heading__tag {
+  text-transform: lowercase;
 }

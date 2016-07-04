@@ -1,0 +1,26 @@
+<div class="c-post-list">
+    {{#foreach posts}}
+        <article class="c-post-list__item {{post_class}}">
+            <a class="c-post-list__image" href="{{url}}" title="{{title}}">
+                <img class="c-post-list__image__img" src="{{image}}" alt="{{title}}"/>
+            </a>
+
+            <h2 class="c-post-list__title">
+                <a href="{{url}}" title="{{title}}">{{title}}</a>
+            </h2>
+
+            <div class="c-post-list__meta">
+                {{date format="MMMM DD, YYYY"}}
+
+                {{#if tags}}
+                    in
+                    <span class="c-post-list__meta__tags">
+                        {{#foreach tags}}
+                            <a href="{{url}}" title="{{name}}">#{{name}}</a>
+                        {{/foreach}}
+                    </span>
+                {{/if}}
+            </div>
+        </article>
+    {{/foreach}}
+</div>

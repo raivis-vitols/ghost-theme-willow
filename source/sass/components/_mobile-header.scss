@@ -7,7 +7,7 @@
   @extend .clear;
   margin-bottom: 30px;
   padding-bottom: 25px;
-  border-bottom: 1px solid $c-grayMedium;
+  border-bottom: 1px solid $c-gray;
 
   // Not visible for desktop
   @include breakpoint(desktop) {

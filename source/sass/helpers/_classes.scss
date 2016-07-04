@@ -15,7 +15,7 @@
  | -----------------------------------------------------------------------------
 */
 .markdown {
-  line-height: 2em;
+  line-height: 2;
 
   h1, h2, h3, p, ul,
   blockquote, pre, .gist {
@@ -56,26 +56,26 @@
   blockquote {
     padding-left: 30px;
     font-style: italic;
-    border-left: 4px solid $c-grayMedium;
+    border-left: 4px solid $c-gray;
   }
 
   hr {
     border: 0;
     height: 1px;
     margin: 30px 0;
-    background: $c-grayMedium;
+    background: $c-gray;
   }
 
   pre {
     padding: 1em;
     overflow: auto;
     font-size: 0.9em;
-    line-height: 1.5em;
-    background: $c-grayLight;
+    line-height: 1.5;
+    background: $c-background;
   }
 
   code {
-    background: $c-grayLight;
+    background: $c-background;
   }
 
   .gist .gist-file {

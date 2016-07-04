@@ -3,14 +3,13 @@
 | Configuration
 |-------------------------------------------------------------------------------
 */
-$c-white: #ffffff;
+$c-white     : #ffffff;
+$c-black     : #555555;
+$c-gray      : #eaeaea;
+$c-grayDark  : #888888;
+$c-background: #f7f7f7;
 
-$c-grayDark: #555555;
-$c-grayLight: #f7f7f7;
-$c-grayMedium: #eaeaea;
-$c-grayAccent: #888888;
-
-$sidebarWidth: 290px;
+$sidebarWidth: 300px;
 $maxPageWidth: 1000px;
 
 /*
@@ -43,19 +42,26 @@ $maxPageWidth: 1000px;
 @import "components/site-viewport";
 @import "components/site-sidebar";
 @import "components/site-content";
+
 @import "components/mobile-header";
+@import "components/error-message";
+
 @import "components/sidebar-header";
 @import "components/sidebar-blog-title";
 @import "components/sidebar-blog-description";
 @import "components/sidebar-contact-links";
 @import "components/sidebar-navigation";
 @import "components/sidebar-promotion-links";
+
 @import "components/post-list";
-@import "components/post-pagination";
 @import "components/post-view";
 @import "components/post-view-meta";
 @import "components/post-view-share";
-@import "components/error-message";
+@import "components/post-pagination";
+
+@import "components/page-title";
+@import "components/author-page";
+@import "components/disqus-comments";
 
 /*
 |-------------------------------------------------------------------------------
