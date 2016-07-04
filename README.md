@@ -22,9 +22,9 @@ Requires Grunt task runner & NPM to be installed.
 
 Edit the `content/themes/[theme-folder]/partials/sidebar.hbs` file.
 
-## Enabling Disqus (https://disqus.com/) Comments
+## Enabling Disqus Comments Box
 
 1. Edit the `content/themes/[theme-folder]/post.hbs` file, uncomment "comments" partial
-block inclusion: turn `<!--{{> "comments"}}-->` into `{{> "comments"}}`.
+inclusion.
 
 2. Replace Disqus embed code with your site code - https://disqus.com/admin/universalcode/
