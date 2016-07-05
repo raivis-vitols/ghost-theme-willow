@@ -8,7 +8,7 @@ Version 2.0 comes with SASS in BEM style using ITCSS (http://itcss.io/) architec
 
 ## Theme Demo
 
-This theme is currently being used on my personal blog - [https://raivis.com/](https://raivis.com/).
+This theme is currently being used on my personal blog - [https://raivis.com/](https://raivis.com/). See this page for more detailed theme overview - [https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/](https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/)
 
 ## Compiling SASS & Minifying JavaScript
 
