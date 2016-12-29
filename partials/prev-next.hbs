@@ -1,0 +1,47 @@
+<div class="c-post-view-prev-next">
+        {{#next_post}}
+            <article class="c-post-view-prev-next__item {{post_class}}">
+                <a class="c-post-view-prev-next__image" href="{{url}}" title="{{title}}">
+                    <img class="c-post-view-prev-next__image__img" src="{{image}}" alt="{{title}}"/>
+                    <span class="c-post-view-prev-next__image__label c-post-view-prev-next__image__label--next">
+                        Next Post
+                    </span>
+                </a>
+
+                <h3 class="c-post-view-prev-next__title">
+                    <a href="{{url}}" title="{{title}}">{{title}}</a>
+                </h3>
+            </article>
+        {{else}}
+            <article class="c-post-view-prev-next__item">
+                <div class="c-post-view-prev-next__image c-post-view-prev-next__image--placeholder">
+                    <span class="c-post-view-prev-next__image__label c-post-view-prev-next__image__label--next">
+                        No Newer Posts
+                    </span>
+                </div>
+            </article>
+        {{/next_post}}
+
+        {{#prev_post}}
+            <article class="c-post-view-prev-next__item {{post_class}}">
+                <a class="c-post-view-prev-next__image" href="{{url}}" title="{{title}}">
+                    <img class="c-post-view-prev-next__image__img" src="{{image}}" alt="{{title}}"/>
+                    <span class="c-post-view-prev-next__image__label c-post-view-prev-next__image__label--previous">
+                        Previous Post
+                    </span>
+                </a>
+
+                <h3 class="c-post-view-prev-next__title">
+                    <a href="{{url}}" title="{{title}}">{{title}}</a>
+                </h3>
+            </article>
+        {{else}}
+            <article class="c-post-view-prev-next__item">
+                <div class="c-post-view-prev-next__image c-post-view-prev-next__image--placeholder">
+                    <span class="c-post-view-prev-next__image__label c-post-view-prev-next__image__label--previous">
+                        No Older Posts
+                    </span>
+                </div>
+            </article>
+        {{/prev_post}}
+</div>

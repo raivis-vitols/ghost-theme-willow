@@ -21,3 +21,115 @@
     left: -$sidebarWidth;
   }
 }
+
+/*
+|-------------------------------------------------------------------------------
+| Sidebar header
+|-------------------------------------------------------------------------------
+*/
+// Cover
+.c-sidebar-header {
+  height: 100px;
+  position: relative;
+  margin-bottom: 65px;
+  @include bg-size(cover);
+  background-position: 50% 50%;
+}
+
+// Logo and link
+.c-sidebar-header__link,
+.c-sidebar-header__image {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+// Logo
+.c-sidebar-header__image {
+  @include border-radius(40px);
+  border: 2px solid $c-white;
+}
+
+// Link {
+.c-sidebar-header__link {
+  left: 50%;
+  bottom: -40px;
+  z-index: 1;
+  position: absolute;
+  margin-left: -40px;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Sidebar blog description
+|-------------------------------------------------------------------------------
+*/
+.c-sidebar-blog-description {
+  padding: 0 20px;
+  font-size: 0.9em;
+  color: $c-grayDark;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Sidebar blog title
+|-------------------------------------------------------------------------------
+*/
+.c-sidebar-blog-title {
+  padding: 0 15px;
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Sidebar contact links - github, linkedin, twitter, etc.
+|-------------------------------------------------------------------------------
+*/
+.c-sidebar-contact-links {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid $c-gray;
+}
+
+.c-sidebar-contact-links__item {
+  padding: 0 5px;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Sidebar navigation
+|-------------------------------------------------------------------------------
+*/
+.c-sidebar-navigation {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  padding: 0 15px 20px;
+  border-bottom: 1px solid $c-gray;
+}
+
+.c-sidebar-navigation__item {
+  padding: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Sidebar promotion links
+|-------------------------------------------------------------------------------
+*/
+.c-sidebar-promotion-links {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $c-gray;
+}
+
+.c-sidebar-promotion-links__item {
+  padding: 5px 15px;
+  display: block;
+}

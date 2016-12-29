@@ -6,13 +6,13 @@
 // Shortcuts to breakpoints
 @mixin breakpoint($breakpoint) {
   @if $breakpoint == "mobile" {
-    @media (max-width: 640px) {
+    @media (max-width: 1024px) {
       @content;
     }
   }
 
   @else if $breakpoint == "desktop" {
-    @media (min-width: 641px) {
+    @media (min-width: 1025px) {
       @content;
     }
   }

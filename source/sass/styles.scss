@@ -46,17 +46,8 @@ $maxPageWidth: 1000px;
 @import "components/mobile-header";
 @import "components/error-message";
 
-@import "components/sidebar-header";
-@import "components/sidebar-blog-title";
-@import "components/sidebar-blog-description";
-@import "components/sidebar-contact-links";
-@import "components/sidebar-navigation";
-@import "components/sidebar-promotion-links";
-
 @import "components/post-list";
 @import "components/post-view";
-@import "components/post-view-meta";
-@import "components/post-view-share";
 @import "components/post-pagination";
 
 @import "components/page-title";

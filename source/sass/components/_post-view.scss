@@ -11,14 +11,132 @@
 // Footer
 .c-post-view__footer {
   text-align: center;
-  margin-top: 40px;
-  padding: 40px 0 10px;
+  margin-top: 30px;
+  padding: 30px 0 10px;
   border-top: 1px solid $c-gray;
 }
 
-// Narrow post page view
-.c-post-view--narrow {
-  text-align: center;
-  max-width: 610px;
-  margin: 0 auto;
+/*
+|-------------------------------------------------------------------------------
+| Post view meta - date & tags
+|-------------------------------------------------------------------------------
+*/
+.c-post-view-meta {
+  line-height: 2;
+  font-size: 0.9em;
+  font-style: italic;
+  color: $c-grayDark;
+}
+
+.c-post-view-meta__tags {
+  text-transform: lowercase;
+}
+
+.c-page-title__heading + .c-post-view-meta {
+  margin-top: 10px;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Post view share - share on Twitter, Facebook and Google+
+|-------------------------------------------------------------------------------
+*/
+.c-post-view-share {
+  @extend .clear;
+}
+
+.c-post-view-share__item {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin: 1px 0;
+  color: $c-white;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  @media (min-width: 550px) {
+    width: 33.333%;
+  }
+}
+
+.c-post-view-share__item:hover {
+  opacity: 0.9;
+  color: $c-white;
+}
+
+.c-post-view-share__item--twitter {
+  background: #4099FF;
+}
+
+.c-post-view-share__item--facebook {
+  background: #3B5998;
+}
+
+.c-post-view-share__item--google {
+  background: #d34836;
+}
+
+/*
+|-------------------------------------------------------------------------------
+| Post view previous / next post
+|-------------------------------------------------------------------------------
+*/
+.c-post-view-prev-next {
+  @extend .clear;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid $c-gray;
+}
+
+.c-post-view-prev-next__item {
+  @media (min-width: 700px) {
+    @include post2Col();
+  }
+
+  @media (max-width: 701px) {
+    &:first-child {
+      margin-bottom: 35px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $c-gray;
+    }
+  }
+}
+
+// Image and image link
+.c-post-view-prev-next__image {
+  margin-bottom: 15px;
+  position: relative;
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.c-post-view-prev-next__image__img {
+  width: 100%;
+  display: block;
+}
+
+.c-post-view-prev-next__image--placeholder {
+  opacity: 0.8;
+  padding-top: 50%;
+  background: $c-gray;
+}
+
+// Previous and Next labels
+.c-post-view-prev-next__image__label {
+  top: 10px;
+  color: $c-white;
+  position: absolute;
+  padding: 10px 15px;
+  background: rgba($c-black, 0.5);
+}
+
+.c-post-view-prev-next__image__label--next {
+  left: 10px;
+}
+
+.c-post-view-prev-next__image__label--previous {
+  right: 10px;
 }
