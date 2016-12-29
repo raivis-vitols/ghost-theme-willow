@@ -1,8 +1,6 @@
-# Willow Ghost Theme 3.0
+# Willow Ghost Theme 4.0
 
-Personal, responsive, minimalist and open-source theme for Ghost blogging platform.
-Lightweight - only 2.9KB of CSS and 820B of JavaScript. No jQuery, vanilla JS only.
-Version 2.0 comes with SASS in BEM style using ITCSS (http://itcss.io/) architecture.
+Personal, responsive, minimalist and open-source theme for Ghost blogging platform. Lightweight - only 3KB of CSS and 820B of JavaScript. No jQuery, vanilla JS only. Starting version 2.0 theme is built with SASS in BEM style using ITCSS (http://itcss.io/) architecture.
 
 ![Willow Ghost Theme](http://i.imgur.com/a8WfkoS.png)
 
@@ -27,4 +25,4 @@ Edit the `content/themes/[theme-folder]/partials/sidebar.hbs` file.
 1. Edit the `content/themes/[theme-folder]/post.hbs` file, uncomment "comments" partial
 inclusion.
 
-2. Replace Disqus embed code with your site code - https://disqus.com/admin/universalcode/
+2. Replace Disqus embed code with your site code - https://disqus.com/admin/universalcode/. Edit `content/themes/[theme-folder]/partials/comments.hbs` file and replace `loadDisqusComments` function body with Disqus embed code function body.

@@ -1,13 +1,21 @@
 <div class="c-disqus-comments">
-    {{! Replace Code From Here }}
-    <div id="disqus_thread"></div>
+    <div id="disqus_thread">
+        <a class="c-disqus-comments__button" onclick="WillowGhostTheme.loadDisqusComments();">
+            Load Comments
+        </a>
+    </div>
     <script>
-        (function() {
-            var d = document, s = d.createElement('script');
-            s.src = '//yourssite.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
+        var WillowGhostTheme = {
+            loadDisqusComments: function () {
+                {{! Replace Code From Here }}
+
+                var d = document, s = d.createElement('script');
+                s.src = '//yourssite.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+
+                {{! Replace Code Until Here }}
+            }
+        };
     </script>
-    {{! Replace Code Until Here }}
 </div>
