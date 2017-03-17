@@ -22,7 +22,7 @@ Edit the `content/themes/[theme-folder]/partials/sidebar.hbs` file. Social links
 
 ## Enabling Disqus Comments Box
 
-1. Edit the `content/themes/[theme-folder]/post.hbs` file, uncomment "comments" partial inclusion. The `<!--{{> "comments"}}-->` one.
+1. Edit the `content/themes/[theme-folder]/post.hbs` file, uncomment `<!--{{> "comments"}}-->` partial inclusion.
 
 2. Replace Disqus embed code with your site code. Edit `content/themes/[theme-folder]/partials/comments.hbs` file and replace `loadDisqusComments` function body with Disqus embed code function.
 
