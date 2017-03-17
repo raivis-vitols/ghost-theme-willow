@@ -6,7 +6,7 @@ Personal, responsive, minimalist and open-source theme for Ghost blogging platfo
 
 ## Theme Demo
 
-This theme is currently being used on my personal blog - [https://raivis.com/](https://raivis.com/). See this page for more detailed theme overview - [https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/](https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/)
+~~This theme is currently being used on my personal blog - [https://raivis.com/](https://raivis.com/). See this page for more detailed theme overview - [https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/](https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/)~~ Sorry, demo is no longer available - check the screenshots below.
 
 ## Compiling SASS & Minifying JavaScript
 
@@ -18,11 +18,18 @@ Requires Grunt task runner & NPM to be installed.
 
 ## Editing Social Links and Promo Links
 
-Edit the `content/themes/[theme-folder]/partials/sidebar.hbs` file.
+Edit the `content/themes/[theme-folder]/partials/sidebar.hbs` file. Social links are in DIV with class `c-sidebar-contact-links` and  promo links are in `c-sidebar-promotion-links` DIV - just edit the anchors added inside them.
 
 ## Enabling Disqus Comments Box
 
-1. Edit the `content/themes/[theme-folder]/post.hbs` file, uncomment "comments" partial
-inclusion.
+1. Edit the `content/themes/[theme-folder]/post.hbs` file, uncomment "comments" partial inclusion. The `<!--{{> "comments"}}-->` one.
 
-2. Replace Disqus embed code with your site code - https://disqus.com/admin/universalcode/. Edit `content/themes/[theme-folder]/partials/comments.hbs` file and replace `loadDisqusComments` function body with Disqus embed code function body.
+2. Replace Disqus embed code with your site code. Edit `content/themes/[theme-folder]/partials/comments.hbs` file and replace `loadDisqusComments` function body with Disqus embed code function.
+
+## Screenshots
+
+![Homepage](http://i.imgur.com/OhiKrda.png)
+---
+![Post](http://i.imgur.com/AHg6RJn.png)
+---
+![Author](http://i.imgur.com/5Wof20Y.png)
