@@ -28,8 +28,8 @@ Edit the `content/themes/[theme-folder]/partials/sidebar.hbs` file. Social links
 
 ## Screenshots
 
-![Homepage](http://i.imgur.com/OhiKrda.png)
+![Homepage](http://i.imgur.com/3xg6fhy.png)
 ---
-![Post](http://i.imgur.com/AHg6RJn.png)
+![Post](http://i.imgur.com/gHunzOq.png)
 ---
-![Author](http://i.imgur.com/5Wof20Y.png)
+![Author](http://i.imgur.com/I3W07B2.png)
