@@ -6,7 +6,7 @@ Personal, responsive, minimalist and open-source theme for Ghost blogging platfo
 
 ## Theme Demo
 
-~~This theme is currently being used on my personal blog - [https://raivis.com/](https://raivis.com/). See this page for more detailed theme overview - [https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/](https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/)~~ Sorry, demo is no longer available - check the screenshots below.
+~~This theme is currently being used on my personal blog - [https://raivis.com/](https://raivis.com/).~~ Sorry, demo is no longer available - check the screenshots below or see this page for more detailed theme overview - [https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/](https://raivis.com/willow-free-responsive-minimalist-ghost-blog-theme/)
 
 ## Compiling SASS & Minifying JavaScript
 
