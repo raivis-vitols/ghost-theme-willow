@@ -1,8 +1,11 @@
-# Willow Ghost Theme 4.0
+# Willow Ghost Theme 4.1
 
 Personal, responsive, minimalist and open-source theme for Ghost blogging platform. Lightweight - only 3KB of CSS and 820B of JavaScript. No jQuery, vanilla JS only. Starting version 2.0 theme is built with SASS in BEM style using ITCSS (http://itcss.io/) architecture.
 
 ![Willow Ghost Theme](http://i.imgur.com/a8WfkoS.png)
+
+## Theme Compatibility
+Theme is fully compatible with Ghost 1.X versions. The 0.X version compatible theme can be found in "version-0.X" branch.
 
 ## Theme Demo
 
