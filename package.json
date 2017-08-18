@@ -6,6 +6,12 @@
     "name": "Raivis Vitols",
     "url": "https://raivis.com"
   },
+  "engines": {
+    "ghost": ">=1.0.0"
+  },
+  "config": {
+    "posts_per_page": 9
+  },
   "devDependencies": {
     "grunt": "~1.0.1",
     "grunt-sass": "~1.1.0",
